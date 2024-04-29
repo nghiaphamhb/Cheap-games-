@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attention switching test</title>
+    <link rel="stylesheet" href="main_style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Attention switching test</h1>
+
+    <div class="box">
+        <div class="big-letter" id="bigLetter">Loading...</div>
+    </div>
+
+    <div class="box-notice">
+        <p id="turn">Number of questions answered: 0</p>
+        <p id="countdownDisplay">The test takes place in ...</p>
+        <p id="correct_streak">Streak of correct answers: 0</p>
+        <p id="hiddenBar" style="display: none;">Hidden bar</p>
+    </div>
+
+    <div class="button-container">
+        <button onclick="chooseColor('#FF0000')">Red (A)</button>
+        <button onclick="chooseColor('#FFFF00')">Yellow (S)</button>
+        <button onclick="chooseColor('#33FF57')">Green (D)</button>
+    </div>
+    <div class="button-container">
+        <button onclick="goBack()" style="margin-top: 20px;">Reset (w)</button>
+    </div>
+</div>
+
+<script src="main_script.js"></script>
